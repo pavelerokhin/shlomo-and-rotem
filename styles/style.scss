@@ -1,0 +1,55 @@
+//$font-1:
+//$font-2:
+
+* {
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", serif;
+  font-weight: 300;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+#bg {
+  background: rgba(254, 250, 250, 0.76);
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+  img {
+    opacity: 0.5;
+  }
+}
+
+#container {
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+
+  .header {
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: center;
+    padding: 25px 0px;
+    position: absolute;
+    margin: 40px auto;
+    width: 100%;
+
+    h1 {
+      color: black;
+      // mix-blend-mode: difference;
+      margin: 0 15px;
+    }
+  }
+
+  .map {
+    border: 0;
+    display: flex;
+    filter: invert(2%);
+    width: 100%;
+
+    iframe {
+      border: 1px solid black;
+      margin: 0 auto;
+    }
+  }
+}
